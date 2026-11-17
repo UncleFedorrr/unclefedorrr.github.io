@@ -1,0 +1,290 @@
+/* Фоновое пространство */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f0f0f0;
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #1a1a1a;
+}
+
+/* Основной контейнер */
+.container {
+    max-width: 1140px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Верхняя шапка: заголовок + навигационный блок */
+.top-header {
+    background-color: rgba(26, 26, 26, 0.92);
+    border: 3px solid #528c31;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.project-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 42px;
+    color: #6cc33b;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #3c3c3c;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.nav-block p {
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 18px;
+    color: #e0e0e0;
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.wiki-btn, .official-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.wiki-btn {
+    background-color: #4a7227;
+    color: #ffffff;
+    border: 2px solid #6cc33b;
+}
+
+.wiki-btn:hover {
+    background-color: #5c8e32;
+}
+
+.official-btn {
+    background-color: #333333;
+    color: #ffffff;
+    border: 2px solid #666666;
+}
+
+.official-btn:hover {
+    background-color: #4a4a4a;
+}
+
+/* Главный информационный блок */
+.main-block {
+    background-color: rgba(26, 26, 26, 0.9);
+    border: 3px solid #3c3c3c;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Заголовок «Об игре» сверху */
+.block-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #6cc33b;
+    font-size: 28px;
+    border-bottom: 1px solid #3c3c3c;
+    padding-bottom: 12px;
+}
+
+/* Контейнер для картинки и текста в одну линию по высоте */
+.hero-content {
+    display: flex;
+    gap: 30px;
+    align-items: stretch;
+}
+
+.poster-img {
+    width: 260px;
+    object-fit: cover;
+    border: 3px solid #528c31;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.overview-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.overview-text p {
+    line-height: 1.6;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+
+.overview-text p.last-paragraph {
+    margin-bottom: 0;
+}
+
+/* Блок ключевых обновлений во всю ширину снизу */
+.versions-box {
+    background-color: rgba(46, 46, 46, 0.85);
+    border-left: 4px solid #528c31;
+    padding: 18px 22px;
+    margin-top: 25px;
+    border-radius: 4px;
+}
+
+.versions-box h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #6cc33b;
+}
+
+.versions-box ul {
+    margin: 0;
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+/* Общий блок «Персонажи» */
+.characters-section {
+    background-color: rgba(26, 26, 26, 0.92);
+    border: 3px solid #3c3c3c;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.section-title {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+    border-bottom: 2px solid #528c31;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+}
+
+/* Отдельные подблоки категорий */
+.mob-group {
+    width: 100%;
+    background-color: rgba(35, 35, 35, 0.9);
+    border: 2px solid #444;
+    border-radius: 8px;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Выравнивание заголовков «Враждебные», «Нейтральные» и т.д. строго по центру */
+.group-title,
+.mob-group h2,
+.mob-group h3 {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #3c3c3c;
+    box-sizing: border-box;
+}
+
+/* Цвета для каждой категории */
+.hostile-group { border-color: #b83b3b; }
+.hostile-group .group-title,
+.hostile-group h2,
+.hostile-group h3,
+.hostile-group h4 { color: #ff6b6b; }
+
+.neutral-group { border-color: #d49b27; }
+.neutral-group .group-title,
+.neutral-group h2,
+.neutral-group h3,
+.neutral-group h4 { color: #ffd166; }
+
+.peaceful-group { border-color: #528c31; }
+.peaceful-group .group-title,
+.peaceful-group h2,
+.peaceful-group h3,
+.peaceful-group h4 { color: #8ce05a; }
+
+.boss-group { border-color: #8a3ffc; }
+.boss-group .group-title,
+.boss-group h2,
+.boss-group h3,
+.boss-group h4 { color: #be95ff; }
+
+/* Контейнер карточек внутри подблока */
+.cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.character-card {
+    background-color: #1c1c1c;
+    border: 1px solid #3c3c3c;
+    border-radius: 6px;
+    width: 460px;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    transition: transform 0.2s ease;
+}
+
+.character-card:hover {
+    transform: translateY(-4px);
+}
+
+.character-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    background-color: transparent;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    flex-shrink: 0;
+}
+
+.card-info h4 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.card-info p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #dcdcdc;
+    text-align: left;
+}
